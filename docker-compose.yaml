@@ -29,15 +29,16 @@ services:
     volumes:
       - ./flight-result-chrome:/usr/share/udemy/test-output
 
-  book-flight-module_firfox:
-    image: pneel141/selenium-docker
-    depends_on:
-      - chrome
-      - firefox
-    environment:
-      - HUB_HOST=hub
-      - BROWSER=firefox
-      - MODULE=book-flight.xml
-    volumes:
-      - ./flight-result-firefox:/usr/share/udemy/test-output
+#  book-flight-module_firfox:
+#    image: pneel141/selenium-docker
+#    depends_on:
+#      - chrome
+
+#      - firefox
+#    environment:
+#      - HUB_HOST=hub
+#      - BROWSER=firefox
+#      - MODULE=book-flight.xml
+#    volumes:
+#      - ./flight-result-firefox:/usr/share/udemy/test-output
 

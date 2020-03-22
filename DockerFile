@@ -17,7 +17,8 @@ ADD target/libs                       libs
 ADD book-flight.xml                   book-flight.xml
 
 # health check script
-ADD healthcheck.sh                    healthcheck.sh
+#ADD healthcheck.sh                    healthcheck.sh
+RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
 
 # BROWSER
 # HUB_HOST
